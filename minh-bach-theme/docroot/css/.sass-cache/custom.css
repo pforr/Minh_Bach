@@ -1,0 +1,325 @@
+/*---------- Global ----------*/
+#CW #hrefFm {
+  display: none; }
+
+/*----- Header Part -----*/
+.portlet header img {
+  display: none; }
+
+.portlet header h1 {
+  line-height: normal;
+  margin: 0;
+  font-size: 19px;
+  color: #055EB2; }
+
+/*----- Content Part -----*/
+/*---------- Homepage ----------*/
+.homepage .content {
+  padding: 0 !important; }
+
+.homepage .content .mb_layout > .portlet-layout {
+  margin-bottom: 15px; }
+
+/*----- Row 2 -----*/
+.homepage .content .mb_layout > .portlet-layout:nth-child(2) {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0 15px; }
+
+.homepage .content .mb_layout > .portlet-layout:nth-child(2) .portlet-column {
+  border: 1px solid #ccc;
+  padding: 1px;
+  margin-left: 1.333333333333333%;
+  width: 24%; }
+
+.homepage .content .mb_layout > .portlet-layout:nth-child(2) .portlet header {
+  height: 31px;
+  margin-bottom: 0 !important; }
+
+.homepage .content .mb_layout > .portlet-layout:nth-child(2) .portlet header h1 {
+  font-size: 13px;
+  text-transform: uppercase;
+  text-align: center;
+  color: white;
+  line-height: 31px; }
+
+.homepage .content .mb_layout > .portlet-layout:nth-child(2) .portlet .portlet-content {
+  padding: 12px 10px 10px !important; }
+
+.homepage .content .mb_layout > .portlet-layout:nth-child(2) .portlet .portlet-content ul li {
+  padding-left: 13px;
+  position: relative;
+  line-height: normal;
+  margin-bottom: 5px !important;
+  padding-bottom: 0 !important;
+  text-align: justify; }
+
+.homepage .content .mb_layout > .portlet-layout:nth-child(2) .portlet .portlet-content ul li:before {
+  content: "\f0c8";
+  font-family: FontAwesome;
+  margin-left: -13px;
+  color: #055EB2;
+  position: absolute;
+  font-size: 8px;
+  top: 4px; }
+
+.homepage .content .mb_layout > .portlet-layout:nth-child(2) .portlet .portlet-content ul li:after {
+  content: "";
+  border-bottom: 0 !important; }
+
+/*-- Row 2 Col 1 --*/
+.homepage .content .mb_layout > .portlet-layout:nth-child(2) .portlet-column:nth-child(1) {
+  margin-left: 0; }
+
+.homepage .content .mb_layout > .portlet-layout:nth-child(2) .portlet-column:nth-child(1) .portlet header {
+  background-image: url(../images/bg-portlet1.png) !important;
+  background-repeat: repeat !important;
+  padding-left: 0 !important; }
+
+/*-- Row 2 Col 2 --*/
+.homepage .content .mb_layout > .portlet-layout:nth-child(2) .portlet-column:nth-child(2) .portlet header {
+  background-image: url(../images/bg-portlet2.png); }
+
+/*-- Row 2 Col 3 --*/
+.homepage .content .mb_layout > .portlet-layout:nth-child(2) .portlet-column:nth-child(3) .portlet header {
+  background-image: url(../images/bg-portlet3.png); }
+
+/*-- Row 2 Col 4 --*/
+.homepage .content .mb_layout > .portlet-layout:nth-child(2) .portlet-column:nth-child(4) .portlet header {
+  background-image: url(../images/bg-portlet4.png); }
+
+.homepage .content .mb_layout > .portlet-layout:nth-child(2) .portlet-column:nth-child(4) .portlet .portlet-content {
+  text-align: center; }
+
+.homepage .content .mb_layout > .portlet-layout:nth-child(2) .portlet-column:nth-child(4) .portlet .portlet-content img {
+  width: 97px !important;
+  height: 97px !important;
+  margin-bottom: 10px !important;
+  float: none !important;
+  margin-left: 0 !important; }
+
+.homepage .content .mb_layout > .portlet-layout:nth-child(2) .portlet-column:nth-child(4) .portlet .portlet-content p {
+  text-align: justify;
+  line-height: normal;
+  font-size: 12px;
+  font-style: italic; }
+
+.homepage .content .mb_layout > .portlet-layout:nth-child(2) .portlet-column:nth-child(4) .portlet .portlet-content span.more {
+  float: right;
+  font-size: 12px;
+  font-style: italic; }
+
+.homepage .content .mb_layout > .portlet-layout:nth-child(2) .portlet-column:nth-child(4) .portlet .portlet-content span.more a:after {
+  content: "\f101";
+  font-family: FontAwesome;
+  margin-left: 3px; }
+
+/*----- Row 3 -----*/
+/*-- Same --*/
+.homepage .content .mb_layout > .portlet-layout:nth-child(3) {
+  padding: 0 15px; }
+
+.homepage .content .mb_layout > .portlet-layout:nth-child(3) .portlet header {
+  padding: 0 0 5px;
+  border-bottom: 2px solid #055EB2;
+  margin-bottom: 5px;
+  background: url(../images/water.png) no-repeat;
+  padding-left: 30px; }
+
+.homepage .content .mb_layout > .portlet-layout:nth-child(3) .portlet .portlet-content {
+  padding: 0; }
+
+/*-- Row 3 Col 1 --*/
+.homepage .content .mb_layout > .portlet-layout:nth-child(3) .portlet-column:nth-child(1) {
+  width: 49.333333333333333%; }
+
+.homepage #column-6 .portlet .journal-content-article img {
+  float: left;
+  width: 33.33333333333333% !important;
+  height: 106px !important;
+  margin-bottom: 1px; }
+
+.homepage #column-6 .portlet .journal-content-article img:nth-child(2),
+.homepage #column-6 .portlet .journal-content-article img:nth-child(3),
+.homepage #column-6 .portlet .journal-content-article img:nth-child(5),
+.homepage #column-6 .portlet .journal-content-article img:nth-child(6) {
+  width: calc(33.33333333333333% - 1px) !important;
+  margin-left: 1px; }
+
+/*-- Row 3 Col 2 --*/
+.homepage .content .mb_layout > .portlet-layout:nth-child(3) .portlet-column:nth-child(2) {
+  margin-left: 1.333333333333333%;
+  width: 24%; }
+
+.homepage #column-7 .portlet header {
+  visibility: hidden; }
+
+.homepage #column-7 .portlet .journal-content-article img {
+  width: 100% !important;
+  height: 71px !important; }
+
+/*-- Row 3 Col 3 --*/
+.homepage .content .mb_layout > .portlet-layout:nth-child(3) .portlet-column:nth-child(3) {
+  margin-left: 1.333333333333333%;
+  width: 24%; }
+
+.homepage #column-8 .portlet .journal-content-article img {
+  width: 100% !important;
+  height: 213px !important; }
+
+/*---------- Another ----------*/
+/*----- Width -----*/
+.content .span8 {
+  width: 69.25% !important; }
+
+.content .span4 {
+  width: 29.25% !important;
+  margin-left: 1.5% !important; }
+
+/*----- Global -----*/
+.content .portlet, .content .portlet-borderless-container {
+  margin-bottom: 15px; }
+
+/*----- Col 1 -----*/
+/*-- Header --*/
+.content #column-1 .portlet header {
+  padding: 0 0 5px;
+  border-bottom: 2px solid #055EB2;
+  background: url(../images/bg_title.png) no-repeat;
+  background-size: 100% 100%; }
+
+.content #column-1 .portlet header h1 {
+  background-image: url(../images/water.png);
+  background-repeat: no-repeat;
+  padding-left: 30px; }
+
+/*-- Content --*/
+.content #column-1 .portlet .portlet-content {
+  border-width: 0 1px 1px;
+  border-color: #ccc;
+  border-style: solid; }
+
+.content #column-1 .portlet-body {
+  text-align: justify; }
+
+/*----- Col 2 -----*/
+/*-- Header --*/
+.content #column-2 .portlet header {
+  padding: 0 0 5px;
+  border-bottom: 2px solid #055EB2;
+  background-image: url(../images/water.png);
+  background-repeat: no-repeat;
+  padding-left: 30px; }
+
+/*-- Content --*/
+.content #column-2 div > div:nth-child(2) .portlet .portlet-content,
+.content #column-2 div > div:nth-child(3) .portlet .portlet-content {
+  border-width: 0 1px 1px;
+  border-color: #ccc;
+  border-style: solid; }
+
+.fback .content #column-2 div > div:nth-child(4) .portlet .portlet-content,
+.fback .content #column-2 div > div:nth-child(5) .portlet .portlet-content {
+  border-width: 0 1px 1px;
+  border-color: #ccc;
+  border-style: solid; }
+
+.content #column-2 div > div:last-child .portlet .portlet-content {
+  padding: 0; }
+
+/*-- List news --*/
+.content #column-2 .portlet .portlet-content ul li {
+  padding-left: 13px;
+  position: relative;
+  line-height: normal;
+  margin-bottom: 8px;
+  padding-bottom: 8px;
+  text-align: justify; }
+
+.content #column-2 .portlet .portlet-content ul li:before {
+  content: "\f0c8";
+  font-family: FontAwesome;
+  margin-left: -13px;
+  color: #055EB2;
+  position: absolute;
+  font-size: 8px;
+  top: 4px; }
+
+.content #column-2 .portlet .portlet-content ul li:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  border-bottom: 1px solid #ccc;
+  width: 95%;
+  height: 1px; }
+
+.content #column-2 .portlet .portlet-content ul li:last-child {
+  margin-bottom: 0;
+  padding-bottom: 0; }
+
+.content #column-2 .portlet .portlet-content ul li:last-child:after {
+  content: "";
+  border-bottom: 0; }
+
+/*-- List Images Bottom --*/
+#column-2 .journal-content-article img {
+  float: left;
+  width: calc((100% - 1px) / 2) !important;
+  margin-bottom: 1px; }
+
+#column-2 .journal-content-article img:nth-child(2),
+#column-2 .journal-content-article img:nth-child(4),
+#column-2 .journal-content-article img:nth-child(6) {
+  margin-left: 1px; }
+
+/*-- Content Part --*/
+.asset-full-content-title {
+  font-weight: bold;
+  font-size: 14px; }
+
+/*-- Another News Part  --*/
+.related_asset_title {
+  font-weight: bold;
+  font-size: 14px; }
+
+.related_asset_list {
+  list-style: disc;
+  margin-left: 15px !important; }
+
+/*-- Xuat ban thong tin --*/
+.asset-bounddary .asset-abstract {
+  margin-bottom: 0; }
+
+.asset-bounddary .asset-abstract .asset-content {
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 10px;
+  margin: 0 0 10px; }
+
+.portlet-body .asset-content {
+  margin: 0 0 10px !important; }
+
+.asset-bounddary:last-child .asset-abstract .asset-content {
+  border-bottom: 0; }
+
+.asset-bounddary .asset-abstract .asset-content .asset-title {
+  line-height: normal;
+  margin: 0;
+  border: 0;
+  font-size: 14px; }
+
+/*-- Tai lieu du an - Goi thau du an --*/
+.tlda table tr:nth-child(4),
+.gtda table tr:nth-child(4),
+.vbpq-attachfile:last-child {
+  display: none; }
+
+/*-- Bai viet --*/
+.journal-content-article ul li {
+  padding: 0 !important; }
+
+.journal-content-article ul li ul {
+  padding-left: 15px !important; }
+

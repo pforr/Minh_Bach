@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<custom-sql>
+	<sql id="com.dtt.portal.dao.vbpq.service.persistence.VanBanPhapQuyFinder.finder">
+		<![CDATA[
+			SELECT
+				*
+			FROM
+				EPORTAL_VANBAN
+			WHERE
+				(groupId = ?)
+				AND (
+					(lower(trichyeu) LIKE ? [$AND_OR_NULL_CHECK$]) OR 
+					(lower(nguoiky) LIKE ? [$AND_OR_NULL_CHECK$]) OR
+					(lower(mavanban) LIKE ? [$AND_OR_NULL_CHECK$])
+				)
+				AND (coquanbanhanh IN ([$WHERE_CQBH$]))
+				AND (loaivanban IN ([$WHERE_LVB$]))
+				AND (linhvucvanban IN ([$WHERE_LVVB$]))
+				AND (status = ?)
+				AND (ngaybanhanh >= ?)
+				AND (ngaybanhanh <= ?)
+				
+			ORDER BY
+				ngaybanhanh DESC, ngaysua DESC
+		]]>
+	</sql>
+	
+	<sql id="com.dtt.portal.dao.vbpq.service.persistence.VanBanPhapQuyFinder.count">
+		<![CDATA[
+			SELECT
+				COUNT(*) AS COUNT_VALUE
+			FROM
+				EPORTAL_VANBAN
+			WHERE
+				(groupId = ?)
+				AND (
+					(lower(trichyeu) LIKE ? [$AND_OR_NULL_CHECK$]) OR 
+					(lower(nguoiky) LIKE ? [$AND_OR_NULL_CHECK$]) OR
+					(lower(mavanban) LIKE ? [$AND_OR_NULL_CHECK$])
+				)
+				AND (coquanbanhanh IN ([$WHERE_CQBH$]))
+				AND (loaivanban IN ([$WHERE_LVB$]))
+				AND (linhvucvanban IN ([$WHERE_LVVB$]))
+				AND (status = ?)
+				AND (ngaybanhanh >= ?)
+				AND (ngaybanhanh <= ?)
+		]]>
+	</sql>
+</custom-sql>

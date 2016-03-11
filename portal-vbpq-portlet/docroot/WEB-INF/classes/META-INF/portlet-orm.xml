@@ -1,0 +1,237 @@
+<?xml version="1.0"?>
+
+<entity-mappings xmlns="http://java.sun.com/xml/ns/persistence/orm" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.0" xsi:schemaLocation="http://java.sun.com/xml/ns/persistence/orm http://java.sun.com/xml/ns/persistence/orm_1_0.xsd">
+	<persistence-unit-metadata>
+		<xml-mapping-metadata-complete/>
+		<persistence-unit-defaults>
+			<access>PROPERTY</access>
+		</persistence-unit-defaults>
+	</persistence-unit-metadata>
+	<mapped-superclass class="com.dtt.portal.dao.vbpq.model.impl.AttachFileModelImpl">
+		<attributes>
+			<id name="id">
+				<column name="ID" />
+			</id>
+			<basic name="vanBanId">
+				<column name="VANBANID" />
+			</basic>
+			<basic name="fileId">
+				<column name="FILEID" />
+			</basic>
+			<basic name="fileLink">
+				<column name="FILELINK" />
+			</basic>
+			<basic name="fileName">
+				<column name="FILENAME" />
+			</basic>
+			<basic name="fileSize">
+				<column name="FILESIZE" />
+			</basic>
+			<transient name="modelAttributes" />
+			<transient name="primaryKey" />
+			<transient name="primaryKeyObj" />
+		</attributes>
+	</mapped-superclass>
+	<mapped-superclass class="com.dtt.portal.dao.vbpq.model.impl.CoQuanBanHanhVanBanModelImpl">
+		<attributes>
+			<id name="id">
+				<column name="ID" />
+			</id>
+			<basic name="ten">
+				<column name="TEN" />
+			</basic>
+			<basic name="trangThai">
+				<column name="TRANGTHAI" />
+			</basic>
+			<basic name="ngayTao">
+				<column name="NGAYTAO" />
+				<temporal>TIMESTAMP</temporal>
+			</basic>
+			<basic name="ngaySua">
+				<column name="NGAYSUA" />
+				<temporal>TIMESTAMP</temporal>
+			</basic>
+			<basic name="nguoiTao">
+				<column name="NGUOITAO" />
+			</basic>
+			<basic name="nguoiSua">
+				<column name="NGUOISUA" />
+			</basic>
+			<basic name="groupId">
+				<column name="GROUPID" />
+			</basic>
+			<basic name="order_">
+				<column name="ORDER_" />
+			</basic>
+			<transient name="modelAttributes" />
+			<transient name="primaryKey" />
+			<transient name="primaryKeyObj" />
+		</attributes>
+	</mapped-superclass>
+	<mapped-superclass class="com.dtt.portal.dao.vbpq.model.impl.LinhVucVanBanModelImpl">
+		<attributes>
+			<id name="id">
+				<column name="ID" />
+			</id>
+			<basic name="ten">
+				<column name="TEN" />
+			</basic>
+			<basic name="trangThai">
+				<column name="TRANGTHAI" />
+			</basic>
+			<basic name="ngayTao">
+				<column name="NGAYTAO" />
+				<temporal>TIMESTAMP</temporal>
+			</basic>
+			<basic name="ngaySua">
+				<column name="NGAYSUA" />
+				<temporal>TIMESTAMP</temporal>
+			</basic>
+			<basic name="nguoiTao">
+				<column name="NGUOITAO" />
+			</basic>
+			<basic name="nguoiSua">
+				<column name="NGUOISUA" />
+			</basic>
+			<basic name="groupId">
+				<column name="GROUPID" />
+			</basic>
+			<basic name="order_">
+				<column name="ORDER_" />
+			</basic>
+			<transient name="modelAttributes" />
+			<transient name="primaryKey" />
+			<transient name="primaryKeyObj" />
+		</attributes>
+	</mapped-superclass>
+	<mapped-superclass class="com.dtt.portal.dao.vbpq.model.impl.LoaiVanBanModelImpl">
+		<attributes>
+			<id name="id">
+				<column name="ID" />
+			</id>
+			<basic name="ten">
+				<column name="TEN" />
+			</basic>
+			<basic name="trangThai">
+				<column name="TRANGTHAI" />
+			</basic>
+			<basic name="ngayTao">
+				<column name="NGAYTAO" />
+				<temporal>TIMESTAMP</temporal>
+			</basic>
+			<basic name="ngaySua">
+				<column name="NGAYSUA" />
+				<temporal>TIMESTAMP</temporal>
+			</basic>
+			<basic name="nguoiTao">
+				<column name="NGUOITAO" />
+			</basic>
+			<basic name="nguoiSua">
+				<column name="NGUOISUA" />
+			</basic>
+			<basic name="groupId">
+				<column name="GROUPID" />
+			</basic>
+			<basic name="order_">
+				<column name="ORDER_" />
+			</basic>
+			<transient name="modelAttributes" />
+			<transient name="primaryKey" />
+			<transient name="primaryKeyObj" />
+		</attributes>
+	</mapped-superclass>
+	<mapped-superclass class="com.dtt.portal.dao.vbpq.model.impl.VanBanPhapQuyModelImpl">
+		<attributes>
+			<id name="id">
+				<column name="ID" />
+			</id>
+			<basic name="maVanBan">
+				<column name="MAVANBAN" />
+			</basic>
+			<basic name="ngayTao">
+				<column name="NGAYTAO" />
+				<temporal>TIMESTAMP</temporal>
+			</basic>
+			<basic name="ngaySua">
+				<column name="NGAYSUA" />
+				<temporal>TIMESTAMP</temporal>
+			</basic>
+			<basic name="nguoiTao">
+				<column name="NGUOITAO" />
+			</basic>
+			<basic name="nguoiSua">
+				<column name="NGUOISUA" />
+			</basic>
+			<basic name="trichYeu">
+				<column name="TRICHYEU" />
+			</basic>
+			<basic name="coQuanBanHanh">
+				<column name="COQUANBANHANH" />
+			</basic>
+			<basic name="loaiVanBan">
+				<column name="LOAIVANBAN" />
+			</basic>
+			<basic name="linhVucVanBan">
+				<column name="LINHVUCVANBAN" />
+			</basic>
+			<basic name="ngayBanHanh">
+				<column name="NGAYBANHANH" />
+				<temporal>TIMESTAMP</temporal>
+			</basic>
+			<basic name="ngayCoHieuLuc">
+				<column name="NGAYCOHIEULUC" />
+				<temporal>TIMESTAMP</temporal>
+			</basic>
+			<basic name="ngayHetHieuLuc">
+				<column name="NGAYHETHIEULUC" />
+				<temporal>TIMESTAMP</temporal>
+			</basic>
+			<basic name="nguoiKy">
+				<column name="NGUOIKY" />
+			</basic>
+			<basic name="vanBanThayThe">
+				<column name="VANBANTHAYTHE" />
+			</basic>
+			<basic name="groupId">
+				<column name="GROUPID" />
+			</basic>
+			<basic name="status">
+				<column name="STATUS" />
+			</basic>
+			<basic name="statusByDate">
+				<column name="STATUSBYDATE" />
+				<temporal>TIMESTAMP</temporal>
+			</basic>
+			<basic name="statusByUserId">
+				<column name="STATUSBYUSERID" />
+			</basic>
+			<basic name="statusByUserName">
+				<column name="STATUSBYUSERNAME" />
+			</basic>
+			<transient name="modelAttributes" />
+			<transient name="primaryKey" />
+			<transient name="primaryKeyObj" />
+			<transient name="statusByUserUuid" />
+		</attributes>
+	</mapped-superclass>
+	<entity class="com.dtt.portal.dao.vbpq.model.impl.AttachFileImpl" name="AttachFile">
+		<table name="EPORTAL_ATTACHFILE" />
+		<attributes />
+	</entity>
+	<entity class="com.dtt.portal.dao.vbpq.model.impl.CoQuanBanHanhVanBanImpl" name="CoQuanBanHanhVanBan">
+		<table name="EPORTAL_COQUANBANHANH" />
+		<attributes />
+	</entity>
+	<entity class="com.dtt.portal.dao.vbpq.model.impl.LinhVucVanBanImpl" name="LinhVucVanBan">
+		<table name="EPORTAL_LINHVUCVANBAN" />
+		<attributes />
+	</entity>
+	<entity class="com.dtt.portal.dao.vbpq.model.impl.LoaiVanBanImpl" name="LoaiVanBan">
+		<table name="EPORTAL_LOAIVANBAN" />
+		<attributes />
+	</entity>
+	<entity class="com.dtt.portal.dao.vbpq.model.impl.VanBanPhapQuyImpl" name="VanBanPhapQuy">
+		<table name="EPORTAL_VANBAN" />
+		<attributes />
+	</entity>
+</entity-mappings>

@@ -1,0 +1,46 @@
+/*--------------------
+		Global
+--------------------*/
+* {margin: 0; padding: 0;  -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box;}
+html, body {min-height: 100%}
+a, a:hover {color: inherit !important; text-decoration: none !important;}
+ul, ol {list-style: none; margin: 0 !important; padding: 0}
+.row-eq-height {display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex;}
+.red {color: red}
+
+
+
+
+
+/*--------------------
+		Main
+--------------------*/
+body {background-color: #eee !important}
+#CW {}
+
+/*----- Header -----*/
+#CW > header {background-image: url(../images/bg-header.png); height: 84px; position: relative;}
+#CW .head {width: 1000px; margin: auto}
+#CW .head .logo {background: url(../images/logo.png) no-repeat; width: 767px; height: 60px; margin: 12px 0 0 20px; float: left;}
+#CW .head .ic1 {background: url(../images/icon1.png) no-repeat; width: 56px; height: 56px; margin: 12px 0 0 20px; float: right}
+#CW .head .ic2 {background: url(../images/icon2.png) no-repeat; width: 47px; height: 49px; margin: 18px 0 0 20px; float: right}
+#CW .flag-area {}
+#CW .flag-area .EF {position: absolute; top: 15px; right: 30px; width: 20px; height: 20px; background-image: url(../images/uk.png); background-size: 100% 100%;}
+
+/*----- Menu -----*/
+#CW > nav {height: 36px; background-color: #5793cf}
+.mMenu {width: 1000px; margin: auto}
+.mMenu ul {}
+.mMenu ul li {float: left; text-transform: uppercase; color: white; font-family: Roboto-Condensed-Regular; line-height: 36px}
+.mMenu ul li:hover {background-color: #4485c5}
+.mMenu ul li a {display: block; padding: 0 22px}
+.mMenu ul li.selected {background-color: #4485c5}
+
+/*----- Content -----*/
+#CW > .content {width: 1000px; margin: auto; min-height: 100px; border-left: 1px solid #cdcdcd; border-right: 1px solid #cdcdcd; background-color: white; overflow: hidden; padding: 10px 15px}
+
+
+/*----- Footer -----*/
+#CW > footer {background-color: #f0f0f0; border-top: 3px solid #055eb2; height: 110px}
+#CW .foot {width: 1000px; margin: auto; background: url(../images/logo-icon.png) no-repeat; height: 100%; background-size: 64px 64px; background-position: 20px 17px; padding: 15px 0 0 100px}
+#CW .foot p {margin-bottom: 0px}

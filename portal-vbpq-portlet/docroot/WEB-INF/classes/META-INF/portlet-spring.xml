@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" default-destroy-method="destroy" default-init-method="afterPropertiesSet" xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+	<bean id="com.dtt.portal.dao.vbpq.service.AttachFileLocalService" class="com.dtt.portal.dao.vbpq.service.impl.AttachFileLocalServiceImpl" />
+	<bean id="com.dtt.portal.dao.vbpq.service.persistence.AttachFilePersistence" class="com.dtt.portal.dao.vbpq.service.persistence.AttachFilePersistenceImpl" parent="basePersistence">
+		<property name="dataSource" ref="ePortalDataSource" />
+	</bean>
+	<bean id="com.dtt.portal.dao.vbpq.service.CoQuanBanHanhVanBanLocalService" class="com.dtt.portal.dao.vbpq.service.impl.CoQuanBanHanhVanBanLocalServiceImpl" />
+	<bean id="com.dtt.portal.dao.vbpq.service.persistence.CoQuanBanHanhVanBanPersistence" class="com.dtt.portal.dao.vbpq.service.persistence.CoQuanBanHanhVanBanPersistenceImpl" parent="basePersistence">
+		<property name="dataSource" ref="ePortalDataSource" />
+	</bean>
+	<bean id="com.dtt.portal.dao.vbpq.service.persistence.CoQuanBanHanhVanBanFinder" class="com.dtt.portal.dao.vbpq.service.persistence.CoQuanBanHanhVanBanFinderImpl" parent="basePersistence">
+		<property name="dataSource" ref="ePortalDataSource" />
+	</bean>
+	<bean id="com.dtt.portal.dao.vbpq.service.LinhVucVanBanLocalService" class="com.dtt.portal.dao.vbpq.service.impl.LinhVucVanBanLocalServiceImpl" />
+	<bean id="com.dtt.portal.dao.vbpq.service.persistence.LinhVucVanBanPersistence" class="com.dtt.portal.dao.vbpq.service.persistence.LinhVucVanBanPersistenceImpl" parent="basePersistence">
+		<property name="dataSource" ref="ePortalDataSource" />
+	</bean>
+	<bean id="com.dtt.portal.dao.vbpq.service.persistence.LinhVucVanBanFinder" class="com.dtt.portal.dao.vbpq.service.persistence.LinhVucVanBanFinderImpl" parent="basePersistence">
+		<property name="dataSource" ref="ePortalDataSource" />
+	</bean>
+	<bean id="com.dtt.portal.dao.vbpq.service.LoaiVanBanLocalService" class="com.dtt.portal.dao.vbpq.service.impl.LoaiVanBanLocalServiceImpl" />
+	<bean id="com.dtt.portal.dao.vbpq.service.persistence.LoaiVanBanPersistence" class="com.dtt.portal.dao.vbpq.service.persistence.LoaiVanBanPersistenceImpl" parent="basePersistence">
+		<property name="dataSource" ref="ePortalDataSource" />
+	</bean>
+	<bean id="com.dtt.portal.dao.vbpq.service.persistence.LoaiVanBanFinder" class="com.dtt.portal.dao.vbpq.service.persistence.LoaiVanBanFinderImpl" parent="basePersistence">
+		<property name="dataSource" ref="ePortalDataSource" />
+	</bean>
+	<bean id="com.dtt.portal.dao.vbpq.service.VanBanPhapQuyLocalService" class="com.dtt.portal.dao.vbpq.service.impl.VanBanPhapQuyLocalServiceImpl" />
+	<bean id="com.dtt.portal.dao.vbpq.service.persistence.VanBanPhapQuyPersistence" class="com.dtt.portal.dao.vbpq.service.persistence.VanBanPhapQuyPersistenceImpl" parent="basePersistence">
+		<property name="dataSource" ref="ePortalDataSource" />
+	</bean>
+	<bean id="com.dtt.portal.dao.vbpq.service.persistence.VanBanPhapQuyFinder" class="com.dtt.portal.dao.vbpq.service.persistence.VanBanPhapQuyFinderImpl" parent="basePersistence">
+		<property name="dataSource" ref="ePortalDataSource" />
+	</bean>
+</beans>

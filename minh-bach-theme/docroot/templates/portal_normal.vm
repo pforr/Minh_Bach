@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+
+#parse ($init)
+
+<html class="$root_css_class" dir="#language ("lang.dir")" lang="$w3c_language_id">
+
+<head>
+	<title>$the_title</title>
+
+	<meta content="initial-scale=1.0, width=device-width" name="viewport" />
+
+	$theme.include($top_head_include)
+</head>
+
+<body class="$css_class">
+
+<a href="#main-content" id="skip-to-content">#language ("skip-to-content")</a>
+
+$theme.include($body_top_include)
+
+#if ($is_signed_in)
+	#dockbar()
+#end
+
+<div id="CW">
+	<header>
+		<div class="head">
+			<a href="http://hanoi.dtt.vn:7182/web/minh-bach/trang-chu" class="logo"></a>
+			<a href="" class="ic2"></a>
+			<a href="" class="ic1"></a>
+		</div>
+		<div class="flag-area">
+			<a href="http://hanoi.dtt.vn:7182/web/minh-bach-eng" class="EF"></a>
+		</div>
+		#*
+			#if (!$is_signed_in)
+				<a data-redirect="$is_login_redirect_required" href="$sign_in_url" id="sign-in" rel="nofollow">$sign_in_text</a>
+			#end
+		*#
+	</header>
+
+	#if ($has_navigation || $is_signed_in)
+		#parse ("$full_templates_path/navigation.vm")
+	#end
+
+	<div class="content">	
+		#if ($selectable)
+			$theme.include($content_include)
+		#else
+			$portletDisplay.recycle()
+
+			$portletDisplay.setTitle($the_title)
+
+			$theme.wrapPortlet("portlet.vm", $content_include)
+		#end
+	</div>
+
+	<footer role="contentinfo">
+		<div class="foot">
+			<p>Trung tâm Quốc gia Nước sạch và Vệ sinh Môi trường nông thôn</p>
+			<p>73 Nguyên Hồng, Đống Đa, Hà Nội</p>
+			<p>Tel: 04.38355964 / Fax: 04.37760439 / Email: cerwass@fpt.vn</p>
+			<p>Đơn vị tư vấn và phát triển DTT</p>
+		</div>
+	</footer>
+</div>
+
+$theme.include($body_bottom_include)
+
+$theme.include($bottom_include)
+
+	<script type="text/javascript" src="$javascript_folder/jquery-2.1.1.min.js" charset="utf-8"></script>
+	<script type="text/javascript" src="$javascript_folder/jquery.als-1.7.min.js" charset="utf-8"></script>
+
+</body>
+
+</html>

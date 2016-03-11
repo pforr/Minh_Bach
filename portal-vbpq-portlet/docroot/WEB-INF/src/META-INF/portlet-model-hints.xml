@@ -1,0 +1,73 @@
+<?xml version="1.0"?>
+
+<model-hints>
+	<model name="com.dtt.portal.dao.vbpq.model.AttachFile">
+		<field name="id" type="long" />
+		<field name="vanBanId" type="long" />
+		<field name="fileId" type="long" />
+		<field name="fileLink" type="String" />
+		<field name="fileName" type="String" />
+		<field name="fileSize" type="String" />
+	</model>
+	<model name="com.dtt.portal.dao.vbpq.model.CoQuanBanHanhVanBan">
+		<field name="id" type="long" />
+		<field name="ten" type="String" />
+		<field name="trangThai" type="boolean" />
+		<field name="ngayTao" type="Date" />
+		<field name="ngaySua" type="Date" />
+		<field name="nguoiTao" type="String" />
+		<field name="nguoiSua" type="String" />
+		<field name="groupId" type="long" />
+		<field name="order_" type="int" />
+	</model>
+	<model name="com.dtt.portal.dao.vbpq.model.LinhVucVanBan">
+		<field name="id" type="long" />
+		<field name="ten" type="String" />
+		<field name="trangThai" type="boolean" />
+		<field name="ngayTao" type="Date" />
+		<field name="ngaySua" type="Date" />
+		<field name="nguoiTao" type="String" />
+		<field name="nguoiSua" type="String" />
+		<field name="groupId" type="long" />
+		<field name="order_" type="int" />
+	</model>
+	<model name="com.dtt.portal.dao.vbpq.model.LoaiVanBan">
+		<field name="id" type="long" />
+		<field name="ten" type="String" />
+		<field name="trangThai" type="boolean" />
+		<field name="ngayTao" type="Date" />
+		<field name="ngaySua" type="Date" />
+		<field name="nguoiTao" type="String" />
+		<field name="nguoiSua" type="String" />
+		<field name="groupId" type="long" />
+		<field name="order_" type="int" />
+	</model>
+	<model name="com.dtt.portal.dao.vbpq.model.VanBanPhapQuy">
+		<field name="id" type="long" />
+		<field name="maVanBan" type="String" />
+		<field name="ngayTao" type="Date" />
+		<field name="ngaySua" type="Date" />
+		<field name="nguoiTao" type="String" />
+		<field name="nguoiSua" type="String" />
+		<field name="trichYeu" type="String" />
+		<field name="coQuanBanHanh" type="long" />
+		<field name="loaiVanBan" type="long" />
+		<field name="linhVucVanBan" type="long" />
+		<field name="ngayBanHanh" type="Date">
+			<hint name="show-time">false</hint>
+		</field>
+		<field name="ngayCoHieuLuc" type="Date">
+			<hint name="show-time">false</hint>
+		</field>
+		<field name="ngayHetHieuLuc" type="Date">
+			<hint name="show-time">false</hint>
+		</field>
+		<field name="nguoiKy" type="String" />
+		<field name="vanBanThayThe" type="long" />
+		<field name="groupId" type="long" />
+		<field name="status" type="int" />
+		<field name="statusByDate" type="Date" />
+		<field name="statusByUserId" type="long" />
+		<field name="statusByUserName" type="String" />
+	</model>
+</model-hints>

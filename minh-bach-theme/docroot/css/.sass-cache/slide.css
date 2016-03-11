@@ -1,0 +1,76 @@
+.m-slide.als-container {
+  position: relative;
+  width: 1000px;
+  margin: 0px auto;
+  box-sizing: border-box; }
+
+.m-slide .als-viewport {
+  position: relative;
+  overflow: hidden;
+  margin: 0px auto;
+  padding: 0; }
+
+.m-slide.als-wrapper {
+  position: relative;
+  list-style: none; }
+
+.m-slide .als-item {
+  position: relative;
+  display: block;
+  cursor: pointer;
+  float: left; }
+
+.m-slide .als-prev, .m-slide .als-next {
+  position: absolute;
+  cursor: pointer;
+  clear: both; }
+
+#lista3 .als-item {
+  margin: 0px 0 0 0;
+  height: 288px;
+  width: 1000px;
+  border-right: 0;
+  position: relative; }
+
+#lista3 .als-item .numbers {
+  position: absolute;
+  top: 80px;
+  left: 35px;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  text-align: center;
+  width: 240px;
+  height: 195px;
+  border-radius: 10px; }
+
+#lista3 .als-item .numbers p {
+  font-size: 25px;
+  margin-top: 18px;
+  line-height: 32px; }
+
+#lista3 .als-item .numbers p span {
+  clear: both;
+  color: yellow;
+  font-size: 60px;
+  line-height: 70px; }
+
+#lista3 .als-item img {
+  position: relative;
+  display: block;
+  vertical-align: middle;
+  margin-bottom: 8px;
+  height: 100%;
+  width: 100%; }
+
+#lista3 .als-prev, #lista3 .als-next {
+  top: 133px;
+  width: 15px;
+  height: 22px;
+  z-index: 9999; }
+
+#lista3 .als-prev {
+  left: 10px; }
+
+#lista3 .als-next {
+  right: 10px; }
+
